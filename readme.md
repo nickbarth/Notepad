@@ -1,6 +1,6 @@
 # Tcl/Tk Notepad
 
-A simple refined notepading experience.
+A simple refined notepading experience for notepad connoisseurs.
 
 ![screenshot](https://raw.githubusercontent.com/nickbarth/Notepad/master/screenshot.png)
 
