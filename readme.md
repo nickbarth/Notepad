@@ -1,4 +1,4 @@
-# Tcl/Tk Notepad
+# Notepad
 
 A simple refined notepading experience. Handcrafted by a notepad connoisseur.
 
