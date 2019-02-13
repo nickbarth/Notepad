@@ -2,6 +2,9 @@
 
 wm title . "Notepad"
 
+menu .m
+. configure -menu .m
+
 text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal}
 scrollbar .yscrollbar -command {.text yview}
 
