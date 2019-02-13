@@ -1,3 +1,5 @@
+#!/usr/bin/env wish
+
 wm title . "Notepad"
 
 text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal}
