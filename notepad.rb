@@ -1,9 +1,9 @@
 cask 'notepad' do
-  version '1.0.0'
-  sha256 '0a588c86d4484855caff06cf3dbb2f1059e42423dae90f69d4e1b371130696a8'
+  version '1.0.1'
+  sha256 'ce7c4daada72d032e136c36900e428cd21f82be095c0c9611849274e8c246e74'
 
   name 'notepad'
-  url "https://github.com/nickbarth/Notepad/releases/download/v1.0.0/notepad-mac.zip"
+  url "https://github.com/nickbarth/Notepad/releases/download/v1.0.1/notepad-mac.zip"
   homepage 'https://github.com/nickbarth/Notepad/'
 
   app 'Notepad.app'
