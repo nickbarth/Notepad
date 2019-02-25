@@ -6,5 +6,7 @@ cask 'notepad' do
   url "https://github.com/nickbarth/Notepad/releases/download/v1.0.1/notepad-mac.zip"
   homepage 'https://github.com/nickbarth/Notepad/'
 
+  auto_updates true
+  
   app 'Notepad.app'
 end
