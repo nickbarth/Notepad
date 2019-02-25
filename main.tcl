@@ -44,6 +44,7 @@ proc file_open {} {
 	set current_file $file_path
 }
 
+bind . <Command-n> { set current_file ""; .text delete 1.0 end; file_save }
 bind . <Command-s> file_save
 bind . <Command-o> file_open
 bind . <Command-a> { .text tag add sel 1.0 end }
