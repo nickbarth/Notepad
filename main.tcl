@@ -1,7 +1,9 @@
 #!/usr/bin/env wish
 
+# globals
 set current_file ""
 
+# code
 proc file_save {} {
 	global current_file
 
@@ -46,7 +48,7 @@ focus .text
 # menu
 menu .menu
 menu .menu.apple -tearoff 0
-.menu.apple add command -label "About" -command {.
+.menu.apple add command -label "About" -command {
   tk_messageBox -title "About Notepad" -message "Notepad v1.0.1" -detail "By Nick Barth 2019"
 }
 .menu add cascade -menu .menu.apple
