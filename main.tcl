@@ -5,7 +5,7 @@ wm title . "Notepad"
 menu .m
 . configure -menu .m
 
-text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal}
+text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal} -undo 1
 scrollbar .yscrollbar -command {.text yview}
 
 pack .yscrollbar -side right -fill y
