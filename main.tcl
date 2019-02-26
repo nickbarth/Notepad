@@ -1,17 +1,5 @@
 #!/usr/bin/env wish
 
-wm title . "Notepad"
-
-menu .m
-. configure -menu .m
-
-text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal} -undo 1
-scrollbar .yscrollbar -command {.text yview}
-
-pack .yscrollbar -side right -fill y
-pack .text -side left -fill both -expand 1 -padx 5 -pady 5
-focus .text
-
 set current_file ""
 
 proc file_save {} {
@@ -44,6 +32,27 @@ proc file_open {} {
 	set current_file $file_path
 }
 
+# app
+wm title . "Notepad"
+
+text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Helvetica -18 normal} -undo 1
+scrollbar .yscrollbar -command {.text yview}
+
+# layout
+pack .yscrollbar -side right -fill y
+pack .text -side left -fill both -expand 1 -padx 5 -pady 5
+focus .text
+
+# menu
+menu .menu
+menu .menu.apple -tearoff 0
+.menu.apple add command -label "About" -command {.
+  tk_messageBox -title "About Notepad" -message "Notepad v1.0.1" -detail "By Nick Barth 2019"
+}
+.menu add cascade -menu .menu.apple
+. configure -menu .menu
+
+# hotkeys
 bind . <Command-n> { set current_file ""; .text delete 1.0 end }
 bind . <Command-s> file_save
 bind . <Command-o> file_open
