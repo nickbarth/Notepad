@@ -1,5 +1,5 @@
 cask 'notepad' do
-  version '1.0.1'
+  version '1.0.5'
   sha256 '086d35eed8e60b5835bd2f04d413a95947b5f4100af5d9ac835edd5163558fb2'
 
   name 'notepad'
