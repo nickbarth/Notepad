@@ -38,7 +38,7 @@ proc file_open {} {
 		set fp [open $file_path r]
 		set data [read $fp]
 		close $fp
-		.text insert 1.0 $data end
+		.text insert 1.0 [string trimright $data]
 	}
 
 	set current_file $file_path
