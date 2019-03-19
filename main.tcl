@@ -109,6 +109,6 @@ bind . <Command-o> file_open
 bind . <Command-f> show_search
 bind . <Command-g> { search_file 1 }
 bind . <Escape> { .text tag remove sel 1.0 end }
-bind .text <Command-a> { .text tag add sel 1.0 end }
+bind .text <Command-a> { .text tag add sel 1.0 end; .text mark set insert end }
 bind .find <Return> { search_file 0 }
 bind .find <Escape> { .text tag remove sel 1.0 end; pack forget .find; .text mark set insert end; focus .text }
