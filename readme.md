@@ -8,6 +8,12 @@ A simple refined notepading experience. Handcrafted by a notepad connoisseur.
 brew cask install https://raw.githubusercontent.com/nickbarth/Notepad/master/notepad.rb
 ```
 
+Try it out: 
+
+```bash
+wish <(curl -s https://github.com/nickbarth/Notepad/blob/master/main.tcl)
+```
+
 ![screenshot](https://raw.githubusercontent.com/nickbarth/Notepad/master/screenshot.png)
 
 
@@ -30,6 +36,6 @@ brew cask install https://raw.githubusercontent.com/nickbarth/Notepad/master/not
     <td>Escape</td><td>Unselect</td>
   </tr>
 </table>
-  
+
 ### License
 WTFPL &copy; 2019 Nick Barth
