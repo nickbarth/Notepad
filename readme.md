@@ -11,7 +11,7 @@ brew cask install https://raw.githubusercontent.com/nickbarth/Notepad/master/not
 Try it out: 
 
 ```bash
-wish <(curl -s https://github.com/nickbarth/Notepad/blob/master/main.tcl)
+wish <(curl -s https://raw.githubusercontent.com/nickbarth/Notepad/master/main.tcl)
 ```
 
 ![screenshot](https://raw.githubusercontent.com/nickbarth/Notepad/master/screenshot.png)
