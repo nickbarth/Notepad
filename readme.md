@@ -1,6 +1,6 @@
 # Notepad
 
-A simple refined notepading experience. Handcrafted by a notepad connoisseur.
+A simple refined notepading experience.
 
 ### Install
 
