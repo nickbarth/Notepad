@@ -2,7 +2,8 @@
 
 # app
 wm title . "Notepad"
-# wm geometry . 900x500
+wm iconphoto . -default [image create photo -file icon.gif]
+wm geometry . 900x500+[expr {([winfo vrootwidth  .] - 900)/2}]+[expr {([winfo vrootheight .] - 500)/2}]
 
 entry .find -textvariable search -font {Courier -18 normal} -highlightthickness 0 -borderwidth 0 -foreground #222222 -background #dddddd -selectforeground #000000 -selectbackground #060d7b -border 5 -relief flat 
 text .text -yscrollcommand {.yscrollbar set} -highlightthickness 0 -font {Courier -18 normal} -undo 1 -background #eeeeee -foreground #222222 -selectbackground #bcbcbc -selectforeground #000000 -border 10 -relief flat
